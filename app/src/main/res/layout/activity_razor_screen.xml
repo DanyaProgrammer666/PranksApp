@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/razor"
+    android:background="@drawable/shaver"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/button2"
         android:layout_width="66dp"
         android:layout_height="57dp"
-        android:layout_marginLeft="156dp"
-
-        android:layout_marginStart="156dp"
-        android:layout_marginTop="236dp"
+        android:layout_marginLeft="168dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="320dp"
+        android:alpha="0"
         android:text="Button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

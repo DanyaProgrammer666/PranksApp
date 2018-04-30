@@ -13,6 +13,7 @@ import android.widget.Button;
 
 public class RazorScreen extends AppCompatActivity implements OnTouchListener {
 
+
     private MediaPlayer mp;
     Vibrator vibrator;
 
@@ -20,6 +21,7 @@ public class RazorScreen extends AppCompatActivity implements OnTouchListener {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_razor_screen);
+
 
         vibrator = (Vibrator) getSystemService(VIBRATOR_SERVICE);
 
