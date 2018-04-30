@@ -3,6 +3,7 @@ package com.example.viper_000.pranks;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.Vibrator;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MotionEvent;
@@ -14,12 +15,15 @@ public class RazorScreen extends AppCompatActivity implements View.OnClickListen
     ImageButton backBtn;
     Button playSoundBtn;
     private MediaPlayer mp;
+    Vibrator vibrator;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_razor_screen);
+
+        vibrator = (Vibrator) getSystemService(VIBRATOR_SERVICE);
 
         ImageButton backBtn = (ImageButton) findViewById(R.id.imageButton);
         backBtn.setOnClickListener(this);
@@ -31,6 +35,7 @@ public class RazorScreen extends AppCompatActivity implements View.OnClickListen
             @Override
             public void onClick(View v) {
                 mp.start();
+                vibrator.vibrate(1000);
             }
         });
     }
