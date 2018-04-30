@@ -9,6 +9,7 @@ import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     ImageButton shaverButton;
+    Button button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,6 +18,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         ImageButton shaverButton = (ImageButton) findViewById(R.id.imageButton2);
         shaverButton.setOnClickListener(this);
+
+        Button button = (Button) findViewById(R.id.button3);
+        button.setOnClickListener(this);
 
     }
     public void onClick(View v){

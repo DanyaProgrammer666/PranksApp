@@ -3,6 +3,7 @@
     package="com.example.viper_000.pranks">
 
     <uses-permission android:name="android.permission.VIBRATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -22,7 +23,8 @@
         <activity
             android:name=".RazorScreen"
             android:label="@string/title_activity_razor_screen"
-            android:theme="@style/generalnotitle"></activity>
+            android:theme="@style/generalnotitle" />
+        <activity android:name=".PoliceScreen"></activity>
     </application>
 
 </manifest>
