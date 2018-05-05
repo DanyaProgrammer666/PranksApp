@@ -9,13 +9,21 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="66dp"
-        android:layout_height="57dp"
-        android:layout_marginLeft="168dp"
-        android:layout_marginStart="168dp"
-        android:layout_marginTop="320dp"
+        android:layout_width="71dp"
+        android:layout_height="91dp"
+        android:layout_marginLeft="156dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="492dp"
         android:alpha="0"
         android:text="Button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/shaver" />
 </android.support.constraint.ConstraintLayout>
