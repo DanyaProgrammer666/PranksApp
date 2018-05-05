@@ -24,6 +24,7 @@
             android:name=".RazorScreen"
             android:label="@string/title_activity_razor_screen"
             android:theme="@style/generalnotitle" />
+        <activity android:name=".shaverSetting"></activity>
     </application>
 
 </manifest>
