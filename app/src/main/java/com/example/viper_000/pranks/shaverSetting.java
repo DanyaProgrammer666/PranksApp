@@ -1,7 +1,9 @@
 package com.example.viper_000.pranks;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 public class shaverSetting extends AppCompatActivity {
 
@@ -10,5 +12,15 @@ public class shaverSetting extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_shaver_setting);
+    }
+    public void onClick(View v){
+        switch(v.getId()){
+            case R.id.button3:
+                Intent intent = new Intent(this,RazorScreen.class);
+                startActivity(intent);
+                break;
+            default:
+                break;
+        }
     }
 }

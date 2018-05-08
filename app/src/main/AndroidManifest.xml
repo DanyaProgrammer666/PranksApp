@@ -24,7 +24,10 @@
             android:name=".RazorScreen"
             android:label="@string/title_activity_razor_screen"
             android:theme="@style/generalnotitle" />
-        <activity android:name=".shaverSetting"></activity>
+        <activity android:name=".shaverSetting" />
+        <activity android:name=".SchoolSound" />
+        <activity android:name=".LieDetector" />
+        <activity android:name=".ElectroScreen"></activity>
     </application>
 
 </manifest>

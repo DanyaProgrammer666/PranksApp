@@ -2,6 +2,7 @@ package com.example.viper_000.pranks;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Vibrator;
@@ -10,6 +11,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class RazorScreen extends AppCompatActivity implements OnTouchListener {
 
@@ -62,5 +64,6 @@ public class RazorScreen extends AppCompatActivity implements OnTouchListener {
 
             return true;
         }
+
     }
 }

@@ -8,7 +8,6 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    ImageButton shaverButton;
     Button button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,19 +15,39 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         getSupportActionBar().hide();
         setContentView(R.layout.activity_main);
 
+        ImageButton schoolBtn = (ImageButton) findViewById(R.id.imageButton);
+        schoolBtn.setOnClickListener(this);
+
         ImageButton shaverButton = (ImageButton) findViewById(R.id.imageButton2);
         shaverButton.setOnClickListener(this);
 
+        ImageButton lieBtn = (ImageButton) findViewById(R.id.imageButton4);
+        lieBtn.setOnClickListener(this);
 
+        ImageButton electroBtn = (ImageButton) findViewById(R.id.imageButton3);
+        electroBtn.setOnClickListener(this);
     }
-    public void onClick(View v){
-        switch(v.getId()){
+
+    public void onClick(View v) {
+        switch (v.getId()) {
             case R.id.imageButton2:
-                Intent intent = new Intent(this,RazorScreen.class);
+                Intent intent = new Intent(this, RazorScreen.class);
                 startActivity(intent);
-                    break;
-                 default:
-                     break;
+                break;
+            default:
+                break;
+            case R.id.imageButton:
+                intent = new Intent(this, SchoolSound.class);
+                startActivity(intent);
+                break;
+            case R.id.imageButton4:
+                intent = new Intent(this, LieDetector.class);
+                startActivity(intent);
+                break;
+            case R.id.imageButton3:
+                intent = new Intent(this, ElectroScreen.class);
+                startActivity(intent);
+                break;
         }
     }
 }

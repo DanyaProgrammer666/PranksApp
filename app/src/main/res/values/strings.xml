@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Pranks</string>
     <string name="title_activity_razor_screen">RazorScreen</string>
+    <string name="btn_lie_false">Ложь</string>
+    <string name="btn_lie_true">Правда</string>
+    <string name="space"> </string>
 </resources>
