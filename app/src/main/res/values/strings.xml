@@ -4,4 +4,9 @@
     <string name="btn_lie_false">Ложь</string>
     <string name="btn_lie_true">Правда</string>
     <string name="space"> </string>
+    <string name="shaver_info">1.Подойди к другу
+    сзади
+    2.Приставь к нему смартфон и нажми
+        на кнопку
+    3.Угарай</string>
 </resources>

@@ -13,7 +13,7 @@ import android.view.View.OnTouchListener;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-public class RazorScreen extends AppCompatActivity implements OnTouchListener {
+public class RazorScreen extends AppCompatActivity implements OnTouchListener,View.OnClickListener {
 
 
     private MediaPlayer mp;
@@ -30,6 +30,8 @@ public class RazorScreen extends AppCompatActivity implements OnTouchListener {
         final Button zero = (Button) this.findViewById(R.id.button2);
         zero.setOnTouchListener(this);
 
+        Button Btn = (Button) findViewById(R.id.button);
+        Btn.setOnClickListener(this);
 
         mp = MediaPlayer.create(this, R.raw.shaver_sound);
 
@@ -65,5 +67,17 @@ public class RazorScreen extends AppCompatActivity implements OnTouchListener {
             return true;
         }
 
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.button:
+                Intent intent = new Intent(this, shaverSetting.class);
+                startActivity(intent);
+                break;
+            default:
+                break;
+        }
     }
 }
