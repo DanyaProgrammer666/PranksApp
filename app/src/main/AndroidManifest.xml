@@ -32,8 +32,6 @@
             android:theme="@style/generalnotitle"/>
         <activity android:name=".ElectroScreen"
             android:theme="@style/generalnotitle"/>
-        <activity android:name=".SchoolQuestion"
-            android:theme="@style/generalnotitle"/>
         <activity android:name=".LieQuestion"
             android:theme="@style/generalnotitle"/>
         <activity android:name=".ElectroQuestion"

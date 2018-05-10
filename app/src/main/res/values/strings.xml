@@ -4,9 +4,8 @@
     <string name="btn_lie_false">Ложь</string>
     <string name="btn_lie_true">Правда</string>
     <string name="space"> </string>
-    <string name="shaver_info">1.Подойди к другу
-    сзади
-    2.Приставь к нему смартфон и нажми
-        на кнопку
-    3.Угарай</string>
+    <string name="shaver_info">1.Подойди к другу сзади\n2.Приставь к нему смартфон и нажми на кнопку \n3.Угарай</string>
+    <string name="school_text">Сделай погромче, нажми на экран и закончи урок</string>
+    <string name="electro_info">1.Подойди к другу сзади\n2.Приставь к немусмартфон и нажмина кнопку\n3.Угарай!</string>
+    <string name="lie_info">1.Друг прикладывает палец\n2.Задай вопрос\n3.Нажимай справа или слева чтобы изменить ответ\n4.Смотри на реакцию"</string>
 </resources>

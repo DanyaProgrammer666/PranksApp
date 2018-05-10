@@ -22,7 +22,7 @@ public class shaverSetting extends AppCompatActivity implements View.OnClickList
     public void onClick(View v){
         switch(v.getId()){
             case R.id.button3:
-                Intent intent = new Intent(this,RazorScreen.class);
+                Intent intent = new Intent(this,MainActivity.class);
                 startActivity(intent);
                 break;
             default:
