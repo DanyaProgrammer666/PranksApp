@@ -9,28 +9,31 @@
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="305dp"
-        android:layout_height="401dp"
+        android:layout_width="301dp"
+        android:layout_height="336dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        app:srcCompat="@drawable/school" />
+        android:layout_marginTop="12dp"
+        app:srcCompat="@drawable/school" />" />
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="287dp"
+        android:layout_width="300dp"
         android:layout_height="356dp"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="21dp"
-        android:alpha="0" />
+        android:layout_marginEnd="27dp"
+        android:layout_marginTop="19dp"
+        android:alpha="0"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="27dp" />
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="299dp"
+        android:layout_width="344dp"
         android:layout_height="152dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="22dp"
         android:fontFamily="@font/impact"
         android:gravity="center"
         android:text="@string/school_text"
