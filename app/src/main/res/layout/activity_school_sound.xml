@@ -49,10 +49,11 @@
         android:fontFamily="@font/impact"
         android:gravity="center"
         android:paddingEnd="10dp"
-        android:paddingRight="10dp"
+        android:layout_marginLeft="10dp"
         android:text="@string/school_text"
         android:textColor="@color/colorAccent"
         android:textSize="30sp"
-        tools:ignore="RtlSymmetry" />
+        tools:ignore="RtlSymmetry"
+        android:paddingRight="10dp" />
 
 </LinearLayout>

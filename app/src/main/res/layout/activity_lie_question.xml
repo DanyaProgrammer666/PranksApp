@@ -1,43 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="4"
     android:background="@drawable/lie_f"
     tools:context=".LieQuestion">
 
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="96dp"
-        android:layout_height="107dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="18dp"
-        app:srcCompat="@drawable/lie_icon" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="11dp"
-        android:layout_marginEnd="11dp"
-        android:background="@drawable/close_icon"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="11dp" />
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="83dp"
+            android:layout_height="107dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            app:srcCompat="@drawable/lie_icon" />
+    </RelativeLayout>
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="224dp"
-        android:layout_height="452dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="2dp"
-        android:fontFamily="@font/impact"
-        android:gravity="center"
-        android:text="@string/lie_info"
-        android:textColor="@color/colorAccent"
-        android:textSize="30dp" />
-</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="249dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/impact"
+            android:gravity="center"
+            android:text="@string/lie_info"
+            android:textColor="@color/colorAccent"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="11dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginRight="11dp"
+            android:background="@drawable/close_icon" />
+    </RelativeLayout>
+
+</LinearLayout>
