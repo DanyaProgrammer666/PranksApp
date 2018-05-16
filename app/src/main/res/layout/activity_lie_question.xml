@@ -31,7 +31,7 @@
     <TextView
         android:id="@+id/textView4"
         android:layout_width="224dp"
-        android:layout_height="382dp"
+        android:layout_height="452dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="2dp"

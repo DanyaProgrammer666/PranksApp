@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     Button button;
@@ -14,39 +15,40 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
+
         setRequestedOrientation (ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.activity_main);
 
-        ImageButton schoolBtn = (ImageButton) findViewById(R.id.imageButton);
+        Button schoolBtn = (Button) findViewById(R.id.button11);
         schoolBtn.setOnClickListener(this);
 
-        ImageButton shaverButton = (ImageButton) findViewById(R.id.imageButton2);
+        Button shaverButton = (Button) findViewById(R.id.button15);
         shaverButton.setOnClickListener(this);
 
-        ImageButton lieBtn = (ImageButton) findViewById(R.id.imageButton4);
+        Button lieBtn = (Button) findViewById(R.id.button16);
         lieBtn.setOnClickListener(this);
 
-        ImageButton electroBtn = (ImageButton) findViewById(R.id.imageButton3);
+        Button electroBtn = (Button) findViewById(R.id.button13);
         electroBtn.setOnClickListener(this);
     }
 
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.imageButton2:
+            case R.id.button11:
                 Intent intent = new Intent(this, RazorScreen.class);
                 startActivity(intent);
                 break;
             default:
                 break;
-            case R.id.imageButton:
+            case R.id.button15:
                 intent = new Intent(this, SchoolSound.class);
                 startActivity(intent);
                 break;
-            case R.id.imageButton4:
+            case R.id.button16:
                 intent = new Intent(this, LieDetector.class);
                 startActivity(intent);
                 break;
-            case R.id.imageButton3:
+            case R.id.button13:
                 intent = new Intent(this, ElectroScreen.class);
                 startActivity(intent);
                 break;
