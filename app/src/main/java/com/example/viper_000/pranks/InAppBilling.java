@@ -21,12 +21,18 @@ public class InAppBilling extends AppCompatActivity implements BillingProcessor.
         getSupportActionBar().hide();
         setContentView(R.layout.activity_in_app_billing);
         bp = new BillingProcessor(this, "MIIBIjANB+gkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgeYHUexKKzlLU1ZtirnyygADa36AbblIR3XjhWJJAzwSS4CmyINi2gKCX4CXXIe9T+e4bcaHgIK5eRu4hn9u9OxdH9sJbzZd0cj59HmFac29fqUhHlu5psxj3wWflzPX0CyS1Uvf3BgPO3n4YmajIBGQ6zW5dOhN5L4KQQiQIbeKDqnbXba5JJ21Lab8/yZtGV7pTBJsaY0HzMDzWflqrGnxeF+g52mYombfRpPenRFcAqNVH7m/GnbD6p8fUL58TY8eFq2MLb3ZGa9OcyzkIZ8qMQgq7w23+ml5ASQesbxSyIDnm91r5IekJl5t2ANCmfR5Y6mZi9bQK25CpchuMwIDAQAB", this);
-        Button Btn = (Button) findViewById(R.id.button17);
-        Btn.setOnClickListener(this);
+        Button Btn2 = (Button) findViewById(R.id.btn2);
+        Btn2.setOnClickListener(this);
+        Button Btn3 = (Button) findViewById(R.id.btn3);
+        Btn3.setOnClickListener(this);
+
+
+        Button Btn4 = (Button) findViewById(R.id.btn4);
+        Btn4.setOnClickListener(this);
     }
     @Override
     public void onClick(View v) {
-        bp.purchase(InAppBilling.this, "viper_000.pranks");
+        bp.purchase(InAppBilling.this, "android.test.purchased");
     }
 
     @Override
@@ -37,7 +43,8 @@ public class InAppBilling extends AppCompatActivity implements BillingProcessor.
 
     @Override
     public void onPurchaseHistoryRestored() {
-
+        Intent intent = new Intent(this, InAppBilling.class);
+        startActivity(intent);
     }
 
     @Override
