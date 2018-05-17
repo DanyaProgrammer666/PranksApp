@@ -4,7 +4,7 @@
 
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
+    <uses-permission android:name="com.android.vending.BILLING" />
 
     <application
         android:allowBackup="true"
@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".InAppBilling"
             android:theme="@style/generalnotitle">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,18 +26,27 @@
             android:name=".RazorScreen"
             android:label="@string/title_activity_razor_screen"
             android:theme="@style/generalnotitle" />
-        <activity android:name=".shaverSetting"
-            android:theme="@style/generalnotitle"/>
-        <activity android:name=".SchoolSound"
-            android:theme="@style/generalnotitle"/>
-        <activity android:name=".LieDetector"
-            android:theme="@style/generalnotitle"/>
-        <activity android:name=".ElectroScreen"
-            android:theme="@style/generalnotitle"/>
-        <activity android:name=".LieQuestion"
-            android:theme="@style/generalnotitle"/>
-        <activity android:name=".ElectroQuestion"
-            android:theme="@style/generalnotitle"></activity>
+        <activity
+            android:name=".shaverSetting"
+            android:theme="@style/generalnotitle" />
+        <activity
+            android:name=".SchoolSound"
+            android:theme="@style/generalnotitle" />
+        <activity
+            android:name=".LieDetector"
+            android:theme="@style/generalnotitle" />
+        <activity
+            android:name=".ElectroScreen"
+            android:theme="@style/generalnotitle" />
+        <activity
+            android:name=".LieQuestion"
+            android:theme="@style/generalnotitle" />
+        <activity
+            android:name=".ElectroQuestion"
+            android:theme="@style/generalnotitle" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/generalnotitle" />
     </application>
 
 </manifest>
