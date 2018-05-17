@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">Пранки: 4 в 1</string>
-    <string name="title_activity_razor_screen">RazorScreen</string>
+    <string name="title_activity_razor_screen">Экран с бритвой</string>
     <string name="shaver_info">1.Подойди к другу сзади\n2.Приставь к нему смартфон и нажми на экран\n3.Угарай</string>
     <string name="school_text">Сделай погромче, нажми на экран и закончи урок</string>
     <string name="electro_info">1.Подойди к другу сзади\n2.Приставь к нему смартфон и нажми на экран\n3.Угарай!</string>
-    <string name="lie_info">1.Друг прикладывает палец\n2.Задай вопрос\n3.Нажимай справа или слева чтобы изменить ответ\n4.Смотри на реакцию"</string>
+    <string name="lie_info">1.Друг прикладывает палец. Задай вопрос 3.Нажимай справа или слева чтобы изменить ответ 4.Смотри на реакцию"</string>
 </resources>

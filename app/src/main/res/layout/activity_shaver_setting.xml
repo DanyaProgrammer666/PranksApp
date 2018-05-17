@@ -19,7 +19,7 @@
             android:layout_height="match_parent"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:fontFamily="@font/impact"
+            app:fontFamily="@font/impact"
             android:gravity="center"
             android:text="@string/shaver_info"
             android:textColor="@color/colorAccent"
