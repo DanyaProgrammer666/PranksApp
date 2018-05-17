@@ -37,20 +37,20 @@ public class ElectroScreen extends AppCompatActivity implements View.OnTouchList
 
     public boolean onTouch(View v, MotionEvent event) {
 
-        switch (event.getAction()) {
+            switch (event.getAction()) {
 
-            case MotionEvent.ACTION_DOWN: {
-                mp.setLooping(true);
-                mp.start();
+                case MotionEvent.ACTION_DOWN: {
+                    mp.setLooping(true);
+                    mp.start();
+                }
+
+                break;
+                case MotionEvent.ACTION_UP: {
+                    mp.pause();
+
+                }
+                break;
             }
-
-            break;
-            case MotionEvent.ACTION_UP: {
-                mp.pause();
-
-            }
-            break;
-        }
         {
             Vibrator vb = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
             if ((event.getAction() & MotionEvent.ACTION_MASK) == MotionEvent.ACTION_DOWN) {
