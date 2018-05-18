@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 27
     defaultConfig {
-        applicationId "viper_000.pranks"
+        applicationId "com.example.viper_000.pranks"
         minSdkVersion 15
         targetSdkVersion 27
 

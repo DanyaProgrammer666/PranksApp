@@ -25,7 +25,7 @@ public class LieQuestion extends AppCompatActivity implements View.OnClickListen
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.button9:
-                Intent intent = new Intent(this, MainActivity.class);
+                Intent intent = new Intent(this, LieDetector.class);
                 startActivity(intent);
                 break;
             default:

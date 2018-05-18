@@ -47,6 +47,8 @@
         <activity
             android:name=".MainActivity"
             android:theme="@style/generalnotitle" />
+        <activity android:name="com.pranks.Pay_attencion" />
+        <activity android:name=".PayAlert"></activity>
     </application>
 
 </manifest>

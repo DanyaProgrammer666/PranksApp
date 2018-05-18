@@ -34,7 +34,7 @@ public class ElectroScreen extends AppCompatActivity implements View.OnTouchList
 
         mp = MediaPlayer.create(this, R.raw.stun_gun);
     }
-
+@Override
     public boolean onTouch(View v, MotionEvent event) {
 
             switch (event.getAction()) {

@@ -25,7 +25,7 @@ public class ElectroQuestion extends AppCompatActivity implements View.OnClickLi
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.button10:
-                Intent intent = new Intent(this, MainActivity.class);
+                Intent intent = new Intent(this, ElectroScreen.class);
                 startActivity(intent);
                 break;
             default:
